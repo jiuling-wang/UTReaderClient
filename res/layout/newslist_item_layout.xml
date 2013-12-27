@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  1.android:descendantFocusability: ViewGroup阻止其基类接收焦点-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82.0dip" 
+    android:descendantFocusability="blocksDescendants"
+    android:marqueeRepeatLimit="marquee_forever">
+    <RelativeLayout 
+        android:id="@id/newslist_item_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="82.0dip"
+        android:layout_marginRight="20.0dip"
+        >
+        <TextView 
+            android:id="@id/newslist_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="Title"
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/newslist_item_title_selector"
+            android:marqueeRepeatLimit="marquee_forever"/>
+        <TextView 
+            android:id="@id/newslist_item_digest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newslist_item_title"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:text="Summary"
+            android:textSize="12.0sp"
+            android:lines="2"
+            android:textColor="@color/newslist_item_digest_selector"
+            android:marqueeRepeatLimit="marquee_forever"/>
+        <TextView 
+            android:id="@id/newslist_item_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newslist_item_digest"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentLeft="true"
+            android:text="From"
+            android:textSize="10.0sp"
+            android:marqueeRepeatLimit="marquee_forever"/>
+        <TextView 
+            android:id="@id/newslist_item_ptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/newslist_item_digest"
+            android:layout_toRightOf="@id/newslist_item_source"
+            android:text="2013-11-11 11:11:11"
+            android:textSize="10.0sp"
+            android:textColor="@color/newslist_item_ptime_selector"
+            android:marqueeRepeatLimit="marquee_forever"/>
+    </RelativeLayout>
+
+</RelativeLayout>

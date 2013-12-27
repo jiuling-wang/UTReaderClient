@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserSettingActivity" >
+
+
+    <com.google.android.gms.common.SignInButton
+         android:id="@+id/sign_in_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" >
+     </com.google.android.gms.common.SignInButton>
+     
+     <Button
+         android:id="@+id/sign_out_button"
+		 android:layout_marginTop="4dip"
+         android:layout_width="wrap_content"
+         android:layout_height="40dip"
+		 android:layout_toRightOf="@id/sign_in_button"
+         android:enabled="false"
+         android:textSize="6pt"
+         android:text="Sign out"/>
+         
+	<LinearLayout
+    	android:id="@+id/check_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/sign_in_button"
+    	android:layout_marginTop="30dip"
+    	android:orientation="vertical" >
+ 
+	<TextView 
+        android:id="@+id/setting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="Select topics you are interested in"/>
+    <CheckBox
+        android:id="@+id/check_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_university" />
+ 
+    <CheckBox
+        android:id="@+id/check_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_sports"
+        android:checked="true" />
+ 
+    <CheckBox
+        android:id="@+id/check_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_fashion" />
+    
+    <CheckBox
+        android:id="@+id/check_game_tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_game_tech" />
+ 
+    <CheckBox
+        android:id="@+id/check_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_music"
+        android:checked="true" />
+ 
+    <CheckBox
+        android:id="@+id/check_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_food" />
+    
+    <CheckBox
+        android:id="@+id/check_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_books" />
+    
+    
+ 
+</LinearLayout>
+	
+    
+     
+      <Button
+         android:layout_below="@id/check_layout"
+         android:id="@+id/settings_back"
+         android:layout_width="110dip"
+         android:layout_height="wrap_content"
+         android:text="Back" />
+
+     <Button
+         android:id="@+id/save_settings"
+         android:layout_width="110dip"
+         android:layout_below="@id/check_layout"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/settings_back"
+         android:text="Set" />
+
+     
+
+
+         
+</RelativeLayout>

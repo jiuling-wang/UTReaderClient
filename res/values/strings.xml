@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UTReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">UTReader</string>
+    <string name="loadmore_btn">Load More</string>
+    <string name="loadmore_text">Loading</string>
+    <string name="et_reply">Comment</string>
+    <string name="reply_post">Post</string>
+    <string name="soft_update_no">It is latest version.</string>
+    <string name="soft_update_title">Software Update</string>
+    <string name="soft_update_info">Update now?</string>
+    <string name="soft_update_updatebtn">Update now</string>
+    <string name="soft_update_later">Update later</string>
+    <string name="soft_updating">Updating</string>
+    <string name="soft_update_cancel">Cancel</string>
+    <string name="reply">Reply</string>
+    <string name="sourceText">Source</string>
+    <string name="nonews">No news</string>
+    <string name="nomorenews">No more news</string>
+    <string name="loadnewserror">Load news error</string>
+    <string name="backcancel">One more press to exit</string>
+    <string name="noreply">No replies</string>
+    <string name="getreplyfaild">Load replies fail</string>
+    <string name="subscription">Subscription</string>
+    <string name="begin_subscription">Begin subscription</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+    <string name="title_activity_testtest">Testtest</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_user_setting">UserSettingActivity</string>
+    <string name="category_university">University</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_fashion">Fashion</string>
+    <string name="category_game_tech">Tech</string>
+    <string name="category_music">Music</string>
+    <string name="category_food">Food</string>
+    <string name="category_books">Books</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+
+</resources>
